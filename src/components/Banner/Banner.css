@@ -1,0 +1,79 @@
+/* src/components/Banner/Banner.css */
+
+.banner {
+    text-align: center;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;  /* Stacks children (h1, h2) vertically */
+    justify-content: flex-start; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    
+    background-color: transparent;
+    width: 100vw;            /* Full width */
+    height: 100vh;          /* Full viewport height */
+    position: relative;     /* If you need to position elements inside it */
+
+    background-size: cover;  /* Cover the entire area of the banner */
+    background-position: center; /* Centers the background image */
+  }
+  
+.banner img {
+    width: 100vw; /* Make the image fill the container */
+    height: 100vh;
+    opacity: 0.7; /* Optional: Makes the image slightly see-through */
+    position: absolute; /* Positioning relative to the banner */
+    left: 0;
+    top: 0;
+    display: block; /* Removes any extra space below the image */
+    object-fit: cover; /* Ensures the image covers the area without distorting the aspect ratio */
+    object-position: center;
+  }
+  
+.banner h1, .banner h2 {
+    position: relative;
+    z-index: 1; /* Above the image */
+    padding: 0 10vw; /* 0 padding top and bottom, 20px padding right and left */
+  }
+
+h1 {
+    font-family: 'Roboto Mono', monospace; /*Applies Roboto Mono to h1 headings */
+    margin-top: 20vh; 
+    }
+
+.linkedin-button {
+    z-index: 1; /* Above the image */
+    display: inline-block;
+    background-color: #0077b5; /* LinkedIn's brand color */
+    color: white;
+    padding: 2vh 2vw;
+    margin-top: 2vh; /* Space from the text above */
+    margin-bottom: 2vh;
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Make the font bold */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.linkedin-button:hover {
+    background-color: #005691; /* Darker shade on hover for visual feedback */
+}
+
+/* Adjustments for headings */
+@media (min-width: 992px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 30px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+}
+
+@media (max-width: 767px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+    .banner {
+        height: auto;  /* Allows the banner to grow taller than the viewport */
+        min-height: 100vh;  /* Ensures it's at least the full height of the viewport */
+    }
+}

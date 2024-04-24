@@ -21,3 +21,86 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# System files #
+################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# It's generally good practice to keep dependency directories out of version control.
+# e.g., Node modules, Python packages, Ruby gems.
+node_modules/
+jspm_packages/
+bower_components/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+*.pyc
+*.pyo
+*.pyd
+*.whl
+*.swp
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS generated files #
+######################
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors and IDEs #
+####################
+/.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+*.swp
+*.bak
+*~
+*.nuxt
+
+# Testing #
+###########
+coverage/
+
+# Production #
+##############
+/www/
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Misc #
+########
+*.sass-cache
+.cache
+.yarn
+.git
+.hg
+.svn
+CVS

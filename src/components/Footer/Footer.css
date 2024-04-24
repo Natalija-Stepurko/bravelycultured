@@ -1,0 +1,15 @@
+/* src/components/Footer/Footer.css */
+
+  .footer {
+    width: 100%;
+    padding: 3vh 0;
+    text-align: center;
+    background-color: #070707;
+    color: white;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.footer p {
+  padding: 0 10vw;
+}

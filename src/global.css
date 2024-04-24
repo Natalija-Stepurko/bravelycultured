@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+html, body {
+    font-family: "Abel", sans-serif;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    /* height: 100vh; Ensures the html and body fill the entire height of the viewport */
+    min-height: 100%;
+    width: 100%; /* Ensures the html and body fill the entire width of the viewport */
+    overflow-x: hidden;  /* Prevent horizontal scrollbar */
+    background-color: #ffffff; /*Sets the background color to black */
+    color: rgb(8, 8, 8); /* Optional: sets the default text color to white for better contrast */
+}
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    
+} */
