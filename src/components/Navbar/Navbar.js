@@ -2,7 +2,7 @@
 
 import './Navbar.css';
 import React from 'react';
-import { Link } from 'react-router-dom'; // Make sure to install react-router-dom if using links
+// import { Link } from 'react-router-dom'; // Make sure to install react-router-dom if using links
 import logoImage from '../../assets/logo.png';
 
 const Navbar = () => {
