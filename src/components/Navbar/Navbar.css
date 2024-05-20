@@ -5,12 +5,12 @@ nav {
   justify-content: space-between; /* Positions logo and links on opposite ends */
   align-items: center; /* Centers items vertically */
   padding: 0 2vh; /* Adds padding on the left and right */
-  background-color: #070707; /* Background color */
-  height: 11vh; /* Adjust height for thicker navbar */
+  background-color: #d5e4ec; /* Background color */
+  height: 13vh; /* Adjust height for thicker navbar */
 }
 
 .logo img {
-  height: 7vh;
+  height: 10vh;
   max-height: 100%; /* Ensures logo does not exceed navbar height */
   width: auto; /* Maintains aspect ratio */
   padding: 0 3vh; /* Adjusted padding to ensure logo doesn't touch the edges */
@@ -39,7 +39,12 @@ nav {
 
 @media (max-width: 768px) {
   .logo img {
-      height: 5vh; /* Smaller height for smaller screens */
+      height: 8vh; /* Smaller height for smaller screens */
       padding: 0 1vh;
   }
+
+  nav {
+    height: 11vh; /* Adjust height for thicker navbar */
+  }
 }
+

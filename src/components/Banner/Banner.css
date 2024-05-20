@@ -20,7 +20,7 @@
 .banner img {
     width: 100vw; /* Make the image fill the container */
     height: 100vh;
-    opacity: 0.7; /* Optional: Makes the image slightly see-through */
+    opacity: 0.8; /* Optional: Makes the image slightly see-through */
     position: absolute; /* Positioning relative to the banner */
     left: 0;
     top: 0;
@@ -28,17 +28,36 @@
     object-fit: cover; /* Ensures the image covers the area without distorting the aspect ratio */
     object-position: center;
   }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%);
+    z-index: 1; /* Ensure the overlay is above the image */
+}
   
 .banner h1, .banner h2 {
     position: relative;
     z-index: 1; /* Above the image */
     padding: 0 10vw; /* 0 padding top and bottom, 20px padding right and left */
-  }
+    font-family: 'Congenial Black', monospace; /* Applies Congenial Black to h1 headings */
+    color: #2e3192; /* Applies the hex color */
+}
+
+  @font-face {
+    font-family: 'Congenial Black';
+    src: url('../../assets/Congenial_Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 h1 {
-    font-family: 'Roboto Mono', monospace; /*Applies Roboto Mono to h1 headings */
-    margin-top: 20vh; 
-    }
+    margin-top: 20vh;
+}
 
 .linkedin-button {
     z-index: 1; /* Above the image */
@@ -60,17 +79,17 @@ h1 {
 
 /* Adjustments for headings */
 @media (min-width: 992px) {
-    h1 { font-size: 36px; }
-    h2 { font-size: 30px; }
+    h1 { font-size: 60px; }
+    h2 { font-size: 36px; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    h1 { font-size: 32px; }
+    h1 { font-size: 36px; }
     h2 { font-size: 26px; }
 }
 
 @media (max-width: 767px) {
-    h1 { font-size: 28px; }
+    h1 { font-size: 32px; }
     h2 { font-size: 22px; }
     .banner {
         height: auto;  /* Allows the banner to grow taller than the viewport */

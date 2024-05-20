@@ -13,11 +13,3 @@ html, body {
     background-color: #ffffff; /*Sets the background color to black */
     color: rgb(8, 8, 8); /* Optional: sets the default text color to white for better contrast */
 }
-
-/* html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100%;
-    
-} */
